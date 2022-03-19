@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" >
+
+    <title>Cadastro</title>
+
+</head>
+<body>
+
+    <div>
+        <h1 id="titulo">Cadastro de DEVs</h1>
+        <p id="subtitulo">Complete suas informações</p>
+        <br> 
+
+        <form> 
+            <fieldset class="grupo"> <!--PAREI EM 15:26
+            3,3                                                        -->
+                <div>
+                    <label for="nome"><strong>Nome</strong></label> 
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset> 
+
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="campo">
+                <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked>Front-end
+                </label>
+                <label>
+                    <input type ='radio' name="devweb" value="backend">Back-end
+                </label>
+                <label>
+                    <input type ='radio' name="devweb" value="fullstack">Fullstack
+                </label>
+            </div>
+
+            <div>
+                <label for="senioridade"><strong>Senioridade</strong></label>
+                <select id="senioridade">
+                    <option selected disable value="">Selecione</option>
+                    <option>Junior</option>
+                    <option>Pleno</option>
+                    <option>Sênior</option>
+                </select>
+            </div>
+           
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
+                    <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                    <label for="tecnologia1">HTML</label>
+                    <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                    <label for="tecnologia2">CSS</label>
+                    <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Javascript">
+                    <label for="tecnologia3">Javascript</label>
+                    <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+                    <label for="tecnologia4">PHP</label>
+                    <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+                    <label for="tecnologia5">C#</label>
+                    <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
+                    <label for="tecnologia6">Python</label>
+                    <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
+                    <label for="tecnologia7">Java</label>
+                 </div>
+            </fieldset>
+
+            <div>
+                <br>
+                <label>Conte um pouco da sua experiência:</label>
+                <textarea row6="6" style="width:26em" id="'experiencia" nome="experiencia"></textarea>
+            </div>
+            <button class="botao" type="submit">Concluído</button>
+
+        </form>
+
+    </div>
+    
+</body>
+</html>
+
+<!-- TAGS DE APRENDIZADO
+
+<br> Pula de linha
+
+<form>  indica onde começa o formulário
+    
+<label> Explicação do campo
+        
+<fieldset> Agrupador de campos
+
+<input   > entrada de valor
+. Possui tipo, nome e id
+
+* O input de type="email" já possui automações de verficações de erro.*
+
+radio button: É o botão que atribui múltipla escolha a opção criada.
+checked: Já deixa a opção pré-programada.
+
+| <option selected disable value="">Selecione</option> | >>>> Essa tag possui alguns atributos específicos... 
+
+selected > cria a opção habilitar e desabilitar 
+disable > desabilita a função de primeira escolha automática.
+value="" . O campo fica vazio porque essa é a ideia para a partir daí nomear pela tag o que eu desejo que fique no campo <option>.
+
+<input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">>>> As checkbox's são os quadradinhos que servem para marcar uma ou mais opções.
+
+<textarea row6="6" style="width:26em" id="'experiencia" nome="experiencia"></textarea>
+atributos do textarea: 
+row6 - nº de linhas
+width - largura (o em é uma outra unidade de dimensão além do pixel)
+
+required: Atributo que indica que se trata de informação obrigatória para prosseguir o cadastro.
+
+-->
